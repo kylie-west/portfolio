@@ -10,18 +10,19 @@
 	</head>
 	<body>
 		<nav id="navbar">
-			<a href="#">Home</a>
-			<a href="#">About</a>
-			<a href="#">Works</a>
-			<a href="#">Contact</a>
+			<div id="nav-links">
+				<a href="#">About</a>
+				<a href="#">Works</a>
+				<a href="#">Contact</a>
+			</div>
 		</nav>
-		<div id="wrapper">
+		<main>
 			<header id="header">
 				<div id="intro">
 					<h2>Hi, I'm</h2>
 					<h1>Kylie West,</h1>
 					<h2>full-stack developer</h2>
-					<p>
+					<p id="bio">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
 						quibusdam ipsum labore, tenetur magni nemo voluptatem eos, vero hic
 						mollitia in quod maxime voluptates, quasi nobis? Culpa, debitis
@@ -29,42 +30,122 @@
 					</p>
 					<button class="btn">Download my resume</button>
 				</div>
-				<div class="photo"></div>
+				<div id="profile-photo"></div>
 			</header>
 			<section id="about">
-				<h2>About me</h2>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Necessitatibus quo reprehenderit laudantium adipisci blanditiis unde
-					voluptatum dolores reiciendis, odit non voluptatibus? In aliquid rerum
-					deserunt modi ullam iusto, vel illum.
-				</p>
-				<p>
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-					necessitatibus dignissimos tempore delectus quo, at officia dolorem
-					nulla autem vitae corporis modi temporibus unde voluptates,
-					consequatur incidunt quas ab sequi.
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nesciunt
-					error, doloribus deserunt impedit incidunt temporibus nemo similique
-					repellat dicta repellendus, voluptatum quia asperiores explicabo iusto
-					fuga modi sapiente. Velit?
-				</p>
+				<div class="section-title">
+					<h2>About me</h2>
+					<div class="line"></div>
+				</div>
+				<div id="story">
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Necessitatibus quo reprehenderit laudantium adipisci blanditiis unde
+						voluptatum dolores reiciendis, odit non voluptatibus? In aliquid
+						rerum deserunt modi ullam iusto, vel illum.
+					</p>
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+						necessitatibus dignissimos tempore delectus quo, at officia dolorem
+						nulla autem vitae corporis modi temporibus unde voluptates,
+						consequatur incidunt quas ab sequi.
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+						nesciunt error, doloribus deserunt impedit incidunt temporibus nemo
+						similique repellat dicta repellendus, voluptatum quia asperiores
+						explicabo iusto fuga modi sapiente. Velit?
+					</p>
+				</div>
 			</section>
-			<section id="projects">
-				<h2>What I've built</h2>
-				<div class="project"></div>
-				<div class="project"></div>
-				<div class="project"></div>
-				<div class="project"></div>
+			<section id="works">
+				<div class="section-title">
+					<div class="line"></div>
+					<h2>What I've built</h2>
+				</div>
+
+				<div id="projects">
+					<article class="project">
+						<div class="info">
+							<h3 class="title">Twitter API</h3>
+							<p class="description">
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+								Mollitia fugiat alias cupiditate maxime! Quos enim rerum nulla,
+								est dignissimos fugiat deserunt sit veritatis vel corrupti
+								distinctio.
+							</p>
+							<ul class="tech-used">
+								<li>Java</li>
+								<li>Spring Boot</li>
+								<li>PostgreSQL</li>
+							</ul>
+						</div>
+						<div class="image">image goes here</div>
+					</article>
+					<article class="project">
+						<div class="info">
+							<h3 class="title">Recipe Box</h3>
+							<p class="description">
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+								Explicabo, recusandae modi cupiditate voluptate nobis, voluptas,
+								adipisci vitae quisquam nam tenetur ea magni perferendis autem
+								beatae fugit. Commodi eos tempore et.
+							</p>
+							<ul class="tech-used">
+								<li>React</li>
+								<li>JavaScript</li>
+								<li>SASS</li>
+								<li>Firebase</li>
+							</ul>
+						</div>
+						<div class="image">image goes here</div>
+					</article>
+					<article class="project">
+						<div class="info">
+							<h3 class="title">Weather App</h3>
+							<p class="description">
+								Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+								Ratione culpa maiores dolor id eligendi quisquam sint fugit
+								autem libero accusamus sequi eaque ea explicabo exercitationem
+								hic repellat perspiciatis, qui nisi.
+							</p>
+							<ul class="tech-used">
+								<li>React</li>
+								<li>JavaScript</li>
+								<li>Styled Components</li>
+							</ul>
+						</div>
+						<div class="image">image goes here</div>
+					</article>
+					<article class="project">
+						<div class="info">
+							<h3 class="title">Portfolio</h3>
+							<p class="description">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Provident ipsa vitae dolorum quidem asperiores at numquam odit
+								ullam maiores, atque rerum eligendi reiciendis corrupti optio
+								doloremque repellendus quam beatae minima!
+							</p>
+							<ul class="tech-used">
+								<li>JavaScript</li>
+								<li>HTML</li>
+								<li>CSS</li>
+							</ul>
+						</div>
+						<div class="image">image goes here</div>
+					</article>
+				</div>
 			</section>
 			<section id="contact">
-				<h2>Contact me</h2>
-				<p>
-					Interested in learning more about me and my work? Feel free to send me
-					an email!
-				</p>
+				<div class="section-title">
+					<div class="line"></div>
+					<h2>Contact me</h2>
+					<div class="line"></div>
+				</div>
+
+				<p>Interested in learning more about me and my work?</p>
+				<p>Feel free to send me an email!</p>
+
 				<a
 					class="btn email-btn"
 					href="mailto:kmichellewest@gmail.com"
@@ -72,7 +153,7 @@
 					>Say hi</a
 				>
 			</section>
-		</div>
+		</main>
 		<footer>footer links go here</footer>
 	</body>
 </html>
