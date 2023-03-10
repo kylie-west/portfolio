@@ -13,7 +13,7 @@
 	--color-text: silver;
 	--color-text-secondary: #6d6d6d;
 
-	--content-width: 60vw;
+	--content-width: 50vw;
 	--section-spacing: 200px;
 }
 
@@ -63,7 +63,6 @@ main {
 .nav-link {
 	display: block;
 	padding: 10px 0;
-	color: var(--color-primary);
 }
 
 .nav-link:hover {
@@ -73,6 +72,7 @@ main {
 
 a {
 	text-decoration: none;
+	color: var(--color-primary);
 }
 
 #header {
@@ -179,6 +179,15 @@ section {
 	list-style-type: none;
 	font-size: 1.4rem;
 	color: var(--color-text-secondary);
+}
+
+.project-links a {
+	color: var(--color-text);
+	transition: 50ms;
+}
+
+.project-links a:hover {
+	color: var(--color-primary);
 }
 
 .project .image {
