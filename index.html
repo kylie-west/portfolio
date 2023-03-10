@@ -11,9 +11,9 @@
 	<body>
 		<nav id="navbar">
 			<div id="nav-links">
-				<a href="#">About</a>
-				<a href="#">Works</a>
-				<a href="#">Contact</a>
+				<a class="nav-link" href="#">About</a>
+				<a class="nav-link" href="#">Works</a>
+				<a class="nav-link" href="#">Contact</a>
 			</div>
 		</nav>
 		<main>
@@ -83,13 +83,14 @@
 
 				<div id="projects">
 					<article class="project">
+						<div class="image"><img src="assets/twitter_api.png" alt="" /></div>
 						<div class="info">
 							<h3 class="title">Twitter API</h3>
 							<p class="description">
-								Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-								Mollitia fugiat alias cupiditate maxime! Quos enim rerum nulla,
-								est dignissimos fugiat deserunt sit veritatis vel corrupti
-								distinctio.
+								A RESTful web API which handles the basic features of a social
+								media app similar to Twitter, including CRUD operations on
+								users, tweets, hashtags, and the relationships between them
+								(e.g. follows, mentions, retweets).
 							</p>
 							<ul class="tech-used">
 								<li>Java</li>
@@ -97,16 +98,16 @@
 								<li>PostgreSQL</li>
 							</ul>
 						</div>
-						<div class="image">image goes here</div>
 					</article>
 					<article class="project">
+						<div class="image"><img src="assets/recipe_box.png" alt="" /></div>
 						<div class="info">
 							<h3 class="title">Recipe Box</h3>
 							<p class="description">
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-								Explicabo, recusandae modi cupiditate voluptate nobis, voluptas,
-								adipisci vitae quisquam nam tenetur ea magni perferendis autem
-								beatae fugit. Commodi eos tempore et.
+								A web application for storing recipes and organizing them by
+								labels. Users can create an account and add, view, edit, or
+								delete their own recipes. Utilizes Firestore, a NoSQL cloud
+								database, to persist user and recipe data.
 							</p>
 							<ul class="tech-used">
 								<li>React</li>
@@ -115,16 +116,17 @@
 								<li>Firebase</li>
 							</ul>
 						</div>
-						<div class="image">image goes here</div>
 					</article>
 					<article class="project">
+						<div class="image"><img src="assets/weather_app.png" alt="" /></div>
 						<div class="info">
 							<h3 class="title">Weather App</h3>
 							<p class="description">
-								Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-								Ratione culpa maiores dolor id eligendi quisquam sint fugit
-								autem libero accusamus sequi eaque ea explicabo exercitationem
-								hic repellat perspiciatis, qui nisi.
+								A weather app that displays current weather information for a
+								given location, featuring dynamic color themes based on weather
+								conditions and time of day. Uses OpenWeatherMap's API as well as
+								Google's Geocoding and Places APIs in order to achieve accurate
+								geocoding and location name prediction.
 							</p>
 							<ul class="tech-used">
 								<li>React</li>
@@ -132,24 +134,18 @@
 								<li>Styled Components</li>
 							</ul>
 						</div>
-						<div class="image">image goes here</div>
 					</article>
 					<article class="project">
+						<div class="image">image goes here</div>
 						<div class="info">
 							<h3 class="title">Portfolio</h3>
-							<p class="description">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Provident ipsa vitae dolorum quidem asperiores at numquam odit
-								ullam maiores, atque rerum eligendi reiciendis corrupti optio
-								doloremque repellendus quam beatae minima!
-							</p>
+							<p class="description">The website you're experiencing now!</p>
 							<ul class="tech-used">
 								<li>JavaScript</li>
 								<li>HTML</li>
 								<li>CSS</li>
 							</ul>
 						</div>
-						<div class="image">image goes here</div>
 					</article>
 				</div>
 			</section>
