@@ -1,3 +1,14 @@
+async function getProfile() {
+	const response = await fetch("https://api.github.com/users/kylie-west");
+	const data = await response.json();
+	return { bio: data.bio, avatar: data.avatar_url };
+}
+
+getProfile().then(profile => {
+	document.getElementById("bio").innerText = profile.bio;
+	document.getElementById("profile-photo").src = profile.avatar;
+});
+
 const links = document.querySelectorAll(".nav-link");
 const navbar = document.getElementById("navbar");
 
