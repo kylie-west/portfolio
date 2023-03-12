@@ -10,7 +10,6 @@
 	/* VARIABLES */
 	--color-bg: #242424;
 	--color-primary: lightgreen;
-	--color-primary-dark: green;
 	--color-text: silver;
 	--color-text-secondary: #6d6d6d;
 	--color-text-secondary-light: #8d8d8d;
@@ -30,6 +29,20 @@ html {
 body {
 	background-color: var(--color-bg);
 	color: var(--color-text);
+	overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+	width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+	box-shadow: inset 2px 0 5px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: var(--color-primary);
+	border-radius: 10px;
 }
 
 p {
@@ -212,7 +225,8 @@ section {
 }
 
 .project-links a {
-	color: var(--color-text);
+	margin-right: 0.8rem;
+	color: var(--color-text-secondary-light);
 	transition: 50ms;
 }
 
@@ -310,6 +324,21 @@ footer {
 		gap: 1.5rem;
 		margin: auto;
 		font-size: 1.2rem;
+	}
+
+	.project .tech-used a {
+		display: block;
+		width: 2rem;
+		height: 2rem;
+	}
+
+	svg {
+		width: 100%;
+		height: 100%;
+	}
+
+	svg path:hover {
+		fill: var(--color-primary);
 	}
 
 	.project .image {
