@@ -1,18 +1,15 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: sans-serif;
-	max-width: 100vw;
-}
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100;400;600&family=IBM+Plex+Mono&display=swap");
 
 :root {
 	/* VARIABLES */
-	--color-bg: #242424;
-	--color-primary: lightgreen;
-	--color-text: silver;
+	--color-bg: #232523;
+	--color-primary: rgb(146, 225, 115);
+	--color-text: #c3c3c3;
 	--color-text-secondary: #6d6d6d;
 	--color-text-secondary-light: #8d8d8d;
+
+	--main-font: "Archivo", sans-serif;
+	--monospace-font: "IBM Plex Mono", monospace;
 
 	--content-width: 50vw;
 	--content-width-tablet: 80vw;
@@ -21,15 +18,12 @@
 	--section-spacing-mobile: 100px;
 }
 
-@keyframes floatIn {
-	0% {
-		transform: translateY(2rem);
-		opacity: 0%;
-	}
-	100% {
-		transform: translateY(0);
-		opacity: 100%;
-	}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: var(--main-font);
+	max-width: 100vw;
 }
 
 html {
@@ -99,7 +93,7 @@ main {
 	display: flex;
 	align-items: center;
 	padding: 0 25px;
-	font-family: monospace;
+	font-family: var(--monospace-font);
 }
 
 .nav-link:hover {
@@ -134,7 +128,7 @@ a {
 }
 
 #intro h2 {
-	font-family: monospace;
+	font-family: var(--monospace-font);
 	color: var(--color-text-secondary);
 	font-size: 4rem;
 }
@@ -194,7 +188,7 @@ section {
 	display: block;
 	width: fit-content;
 	white-space: nowrap;
-	font-family: monospace;
+	font-family: var(--monospace-font);
 	font-size: 4rem;
 	color: var(--color-primary);
 }
@@ -236,7 +230,7 @@ section {
 }
 
 .project .tech-used li {
-	font-family: monospace;
+	font-family: var(--monospace-font);
 	font-size: 1.4rem;
 	color: var(--color-text-secondary-light);
 }
@@ -270,10 +264,41 @@ section {
 
 footer {
 	padding: 5rem;
-	margin: auto;
 	text-align: center;
 	font-size: 1.4rem;
 	color: var(--color-primary);
+}
+
+svg {
+	width: 100%;
+	height: 100%;
+}
+
+svg path {
+	fill: var(--color-primary);
+}
+
+svg path:hover {
+	fill: #fff;
+}
+
+footer .github-icon {
+	display: block;
+	width: 5rem;
+	height: 5rem;
+	margin: auto;
+	cursor: pointer;
+}
+
+@keyframes floatIn {
+	0% {
+		transform: translateY(2rem);
+		opacity: 0%;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 100%;
+	}
 }
 
 @media screen and (max-width: 1200px) {
@@ -347,15 +372,6 @@ footer {
 		display: block;
 		width: 2rem;
 		height: 2rem;
-	}
-
-	svg {
-		width: 100%;
-		height: 100%;
-	}
-
-	svg path:hover {
-		fill: var(--color-primary);
 	}
 
 	.project .image {
