@@ -31,7 +31,7 @@ links.forEach(link => {
 			alignToTop: true
 		});
 		if (hash !== "#header") {
-			setTimeout(hideNavbar, 500);
+			setTimeout(hideNavbar, 700);
 		}
 	});
 });
